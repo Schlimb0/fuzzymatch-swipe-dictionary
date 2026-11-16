@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+dedupe_work/
+demo_products*.csv
+*.tmp
+.venv/
