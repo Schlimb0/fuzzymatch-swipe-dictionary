@@ -73,3 +73,11 @@ python swipe_dedupe.py dedupe products.csv \
 7. Clustering refuses to chain records together if any two members would be vetoed.
 
 Tuning flags on `dedupe`: `--k`, `--min-cos`, `--review-min`, `--typo-max-freq`.
+
+## Quick cohort swipe (no dependencies)
+
+```bash
+python cohort_swipe.py products.csv
+```
+
+Shows each pair of rows sharing a `cohort8` value (where `cohort8_count` is 2) by `MATL_SHRT_DESC`. → dupe, ← not a dupe, `q` quit. Decisions go to `products_cohort_decisions.csv`; re-run to carry on where you left off.
